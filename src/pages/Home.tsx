@@ -1,12 +1,15 @@
+import GlobalStreak from "@/components/custom/GlobalStreak";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 function Home() {
   return (
-    <Card className="w-[200px]">
+    <Card className="w-[800px]">
       <CardHeader>
-        <CardTitle>Wellcome back \\Username//</CardTitle>
+        <CardTitle className="text-3xl">Wellcome back \\Username//</CardTitle>
       </CardHeader>
-      <CardContent></CardContent>
+      <CardContent>
+        <GlobalStreak value={3} label="Esta semana" />
+      </CardContent>
     </Card>
   );
 }
